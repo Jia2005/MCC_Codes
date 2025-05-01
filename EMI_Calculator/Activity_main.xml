@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto" 
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:padding="20dp" 
+    android:gravity="center"> 
+ 
+    <com.google.android.material.textfield.TextInputLayout 
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:hint="Loan Amount" 
+        app:boxBackgroundMode="outline"> 
+ 
+        <com.google.android.material.textfield.TextInputEditText 
+            android:id="@+id/loanAmount" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:inputType="numberDecimal"/> 
+    </com.google.android.material.textfield.TextInputLayout> 
+ 
+    <com.google.android.material.textfield.TextInputLayout 
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:hint="Interest Rate (%)" 
+        app:boxBackgroundMode="outline" 
+        android:layout_marginTop="10dp"> 
+ 
+        <com.google.android.material.textfield.TextInputEditText 
+            android:id="@+id/interestRate" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:inputType="numberDecimal"/> 
+    </com.google.android.material.textfield.TextInputLayout> 
+ 
+    <com.google.android.material.textfield.TextInputLayout 
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:hint="Loan Tenure (Years)" 
+        app:boxBackgroundMode="outline" 
+        android:layout_marginTop="10dp"> 
+ 
+        <com.google.android.material.textfield.TextInputEditText 
+            android:id="@+id/loanTenure" 
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content" 
+            android:inputType="number"/> 
+    </com.google.android.material.textfield.TextInputLayout> 
+ 
+    <Button 
+        android:id="@+id/calculateBtn" 
+        android:layout_width="match_parent" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="20dp" 
+        android:backgroundTint="@color/black" 
+        android:text="Calculate EMI" /> 
+ 
+</LinearLayout>
